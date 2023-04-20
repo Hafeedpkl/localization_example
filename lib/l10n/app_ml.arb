@@ -1,0 +1,15 @@
+{
+    "homePage": "ഹോം പേജ്",
+    "personalInformation": "സ്വകാര്യ വിവരം",
+    "name":"പേര്",
+    "nameHint":"പേര് സൂചന",
+    "email":"ഇമെയിൽ",
+    "emailHint":"നിങ്ങളുടെ ഇമെയിൽ നൽകുക",
+    "dateOfBirth":"ജനനത്തീയതി",
+    "requiredField":"ആവശ്യമായ ഫീൽഡ്",
+    "submitInfo":"വിവരങ്ങൾ സമർപ്പിക്കുക",
+    "aboutUs": "ഞങ്ങളേക്കുറിച്ച്",
+    "changeLanguage": "ഭാഷ മാറ്റുക",
+    "about" : "ലോറെം ഇപ്‌സം വെറും ഡമ്മി ടെക്‌സ്‌റ്റാണ്",
+    "settings": "ക്രമീകരണങ്ങൾ"
+}

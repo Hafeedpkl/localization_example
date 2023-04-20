@@ -1,0 +1,15 @@
+{
+    "homePage": "الصفحة الرئيسية",
+    "personalInformation": "معلومات شخصية",
+    "name":"اسم",
+    "nameHint":"أدخل أسمك"
+,   "email":"بريد إلكتروني",
+    "emailHint":"بريد إلكتروني",
+    "dateOfBirth":"تاريخ الميلاد",
+    "requiredField":"يتطلب حقلا",
+    "submitInfo":"إرسال المعلومات",
+    "aboutUs": "معلومات عنا",
+    "changeLanguage": "تغيير اللغة",
+    "about" : "لوريم إيبسوم هو ببساطة نص شكلي",
+    "settings": "إعدادات"
+}
