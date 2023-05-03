@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:localization_example/classes/language_constant.dart';
-import 'package:localization_example/pages/home_page.dart';
+import 'package:localization_example/pages/bottom_navigation.dart';
 import 'package:localization_example/router/custom_router.dart';
 import 'package:localization_example/router/route_constants.dart';
 
@@ -20,11 +20,19 @@ class MyApp extends StatefulWidget {
   }
 }
 
+String stringLocale = 'en';
+localeGet() {
+  return stringLocale;
+}
+
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
+  get locale => _locale;
   setLocale(Locale locale) {
     setState(() {
       _locale = locale;
+      stringLocale = locale.toString();
+      localeGet();
     });
   }
 
@@ -37,14 +45,15 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           // useMaterial3: true,
           primarySwatch: Colors.blue,
         ),
-        home: const HomePage(),
+        home: const BottomNavScreen(),
         onGenerateRoute: CustomRouter.generatedRoute,
-        initialRoute: homeRoute,
+        initialRoute: bottomNavRoute,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         locale: _locale,
         supportedLocales: AppLocalizations.supportedLocales);

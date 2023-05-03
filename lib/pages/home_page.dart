@@ -23,33 +23,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(translation(context).homePage),
-        actions: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: DropdownButton<Language>(
-              underline: const SizedBox(),
-              icon: const Icon(
-                Icons.language,
-                color: Colors.white,
-              ),
-              onChanged: (Language? language) async {
-                if (language != null) {
-                  Locale _locale = await setLocale(language.languageCode);
-                  MyApp.setLocale(context, _locale);
-                }
-              },
-              items: Language.languageList()
-                  .map<DropdownMenuItem<Language>>(
-                    (e) => DropdownMenuItem<Language>(
-                        value: e, child: Text(e.name)),
-                  )
-                  .toList(),
-            ),
-          ),
-        ],
-      ),
       drawer: Drawer(
         child: _drawerList(),
       ),
